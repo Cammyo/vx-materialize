@@ -1,0 +1,1 @@
+//angular controller for queue page

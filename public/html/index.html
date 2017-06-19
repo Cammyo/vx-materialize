@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="zxApp" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VitalityX</title>
+
+  <link rel="icon" type="image/png" href="http://vitalityx.us/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="http://vitalityx.us/favicon-96x96.png">
+  <link rel="icon" type="image/png" href="http://vitalityx.us/favicon-16x16.png">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-route.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="text/javascript" src="/js/controllers.dashboard.js"></script>
+</head>
+
+<body ng-controller="dashboardCtrl as zx" style="background-image:url(http://vitalityx.us/images/fadebg.jpg);">
+  <div id="queue" class="modal bottom-sheet blue">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+  <header class="content">
+    <nav class="top-nav grey darken-4 z-depth-5" style="height:50px;border-top:5px solid #1e7be4;border-right:3px solid #1e7be4;">
+      <div class="container" style="width:85%;">
+        <div class="nav-wrapper">
+          <a class="page-title">Dashboard</a>
+          <!--put angular route here-->
+        </div>
+      </div>
+    </nav>
+    <div class="container" style="background-color:grey;">
+      <a href="" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+    </div>
+    <ul id="nav-mobile" class="side-nav fixed grey darken-3 z-depth-0">
+      <li class="logo grey darken-4 " style="height:100px;">
+        <div style="border-top:5px solid #1e7be4;">
+          <img src="http://vitalityx.us/images/vxblue.png" alt="" style="height:60px;width:100%;">
+          <div class="center-align" style="line-height:0px;font-size:24px;">
+            <font>Season </font>
+            <font class="blue-text">6</font>
+          </div>
+        </div>
+      </li>
+      <li class="queue-status grey darken-3" style="height:125px;">
+        <div class="valign-wrapper center-align">
+          <button data-target="queue" class="queue-button blue waves-effect waves-blue btn-large z-depth-5">Play a Game</button>
+        </div>
+      </li>
+      <li><a style="border-top:5px solid #1e7be4;border-right:3px solid #1e7be4;" class="subheader waves-effect waves-blue waves-ripple grey darken-4">Navigation</a></li>
+      <li><a href="#/" class="grey darken-3 waves-effect waves-blue waves-ripple"><i class="material-icons">games</i>Home</a></li>
+      <li><a href="#!" class="grey darken-3 waves-effect waves-blue waves-ripple"><i class="material-icons">trending_up</i>Leaderboard</a></li>
+      <li><a href="#!" class="grey darken-3 waves-effect waves-blue waves-ripple"><i class="material-icons">assignment</i>Profile</a></li>
+
+      <li><a style="border-top:5px solid #1e7be4;border-right:3px solid #1e7be4;" class="subheader grey darken-4 waves-effect waves-blue waves-ripple">Account</a></li>
+      <li><a href="#!" class="grey darken-3 waves-effect waves-blue waves-ripple"><i class="material-icons">assessment</i>Stats</a></li>
+      <li><a href="#!" class="grey darken-3 waves-effect waves-blue waves-ripple"><i class="material-icons">stars</i>Recent Players</a></li>
+      <li><a href="#!" class="grey darken-3 waves-effect waves-blue waves-ripple"><i class="material-icons">settings</i>Settings</a></li>
+      <li><a href="#!" class="logout grey darken-3 waves-effect waves-logout waves-ripple"><i class="material-icons">settings_power</i>Logout</a></li>
+
+      <li>
+        <div class="divider grey darken-4"></div>
+      </li>
+    </ul>
+  </header>
+  <main class="content">
+    <ng-view></ng-view>
+  </main>
+  <footer></footer>
+
+
+  <script type="text/javascript" src="/js/app.js"></script>
+</body>
+
+</html>

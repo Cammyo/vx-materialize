@@ -1,0 +1,153 @@
+body, .side-nav li > a,.side-nav .subheader{
+  color:#FFFFFF;
+}
+
+.waves-effect.waves-blue .waves-ripple {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+  background-color: rgba(30, 123, 228, 1);
+}
+.waves-effect.waves-logout .waves-ripple {
+  background-color: rgba(255, 0, 0, .5);
+}
+
+.blue{
+  background-color:rgba(30,123,228)
+}
+
+.blu-text{
+  color:rgba(30,123,228)
+}
+
+.author-info{
+  text-align:center;
+  font-size:14px;
+  color:#676767;
+}
+.author-info span, .author-info a{
+  color:#1e7be4;
+}
+
+.news-inner{
+  
+}
+
+.modal{
+  height:800px;
+}
+
+.panel{
+  background-color: #151515;
+  color: #fff;
+  margin-top:0;
+  max-width:800px;
+  border-top:none;
+  padding:0;
+}
+
+.title{
+  border-top: 5px solid #1e7be4;
+  border-right: 3px solid #1e7be4;
+  padding: 1rem;
+  text-align:center;
+  height:48;
+  font-size:20px;
+}
+
+.row .col{
+  padding:1%;
+}
+
+@media only screen and (min-width: 993px) {
+  .content{
+    padding-left:300px;
+  }
+  .container {
+    width: 100%;
+    max-width:1550px;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .nav-wrapper{
+    text-align:center;
+  }
+}
+
+.queue-status{
+  width:100%;
+  padding:10% 10%;
+}
+
+.queue-button{
+  height:65px;
+  width:250px;
+  background-color:rgba(30,123,228);
+  padding:0;
+  line-height:65px;
+  font-size:18px;
+}
+
+.side-nav .logout:hover{
+  color:#ff0000;
+  border-right: 3px solid #ff0000;
+}
+
+.side-nav .logout:hover i{
+  color:#ff0000;
+}
+
+.side-nav li > a:hover i{
+  background-color:rgba(30,123,228);
+  color:#1e7be4;
+}
+.side-nav li > a:hover{
+  color:#1e7be4;
+  border-right: 3px solid #1e7be4;
+
+
+}
+
+.active{
+    border-right: 3px solid #1e7be4;
+}
+.active
+
+a,i{
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #1e7be4;
+    background-color:rgba(30,123,228);
+}
+  
+a.button-collapse.top-nav {
+    position: absolute;
+    text-align: center;
+    height: 48px;
+    width: 48px;
+    left: 7.5%;
+    top: 0;
+    float: none;
+    margin-left: 1.5rem;
+    color: #fff;
+    font-size: 36px;
+    z-index: 2;
+}
+
+.footer{
+    padding: 0.75rem;
+    padding-bottom: 0;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 5px solid #1e7be4;
+}
+
+
+
+
+
+
+
